@@ -1,9 +1,0 @@
-- hosts: default
-  gather_facts: yes
-  become: yes
-
-  roles:
-  # - squid
-  - evoacme
-
-# vim:ft=ansible

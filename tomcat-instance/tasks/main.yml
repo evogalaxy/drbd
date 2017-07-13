@@ -1,6 +1,0 @@
----
-- include: check.yml
-- include: user.yml
-- include: systemd.yml
-- include: alias.yml
-- include: bootstrap.yml

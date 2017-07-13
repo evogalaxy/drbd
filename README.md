@@ -1,10 +1,27 @@
-# Ansible-roles
+# drbd-utils
 
-A repository for Ansible roles used by Evolix.
+Install tools to setup DRBD replication accross servers.
 
-It contains only roles, everything else is available at
-https://forge.evolix.org/projects/ansible-public
+## Tasks
 
-The **stable** branch contains roles that we consider ready for production.
+Everything is in the `tasks/main.yml` file.
 
-The **unstable** branch contains not sufficiently tested roles (or evolutions on existing roles) that we don't consider ready for production yet.
+## Available variables
+
+The variable `admin_users` must be a "dict" of one or more users :
+
+```
+admin_users:
+  foo:
+    name: foo
+    uid: 1001
+    fullname: 'Mr Foo'
+    password_hash: 'sdfgsdfgsdfgsdfg'
+    ssh_key: 'ssh-rsa AZERTYXYZ'
+  bar:
+    name: bar
+    uid: 1002
+    fullname: 'Mr Bar'
+    password_hash: 'gsdfgsdfgsdfgsdf'
+    ssh_key: 'ssh-rsa QWERTYUIOP'
+```
